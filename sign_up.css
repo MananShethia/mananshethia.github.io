@@ -1,0 +1,70 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header
+{
+    z-index: 4;
+    position: fixed;
+    background: #22242a;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+ .head h2
+{
+    color: rgba(255, 255, 255, 0.973);
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.head span
+{
+    color: rgb(0, 162, 255);
+}
+
+.page
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 38%;
+    border: 1px solid black;
+    background: #fff;
+    box-shadow: black;
+    padding: 20px;
+}
+
+.img
+{
+    margin-left: 0px;
+    background: url(back_img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.subo
+{
+    background: #0864af;
+    color: white;
+    border: 0px;
+    width: 70px;
+    height: 30px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.subo:hover
+{
+    background: #1e79c4;
+}
+
+.subo:active
+{
+    background: #0864af;
+}

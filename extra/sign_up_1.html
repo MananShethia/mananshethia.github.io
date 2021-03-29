@@ -1,0 +1,197 @@
+<html>
+	<head>
+        <title>create_My title</title>
+        <link rel="stylesheet" href="sign_up.css">
+		<script type="text/javascript">
+		
+        function fn1()
+        {          
+            var password = document.getElementById("pw");//.value;
+            var username = document.getElementById("un");//.value; 
+            var email = document.getElementById("eml");
+
+            var t1 = document.getElementById("tac");
+            var tv = document.getElementById("tac").innerText;
+            
+            
+            var g1 = document.getElementById("rd1");
+            var g2 = document.getElementById("rd2");
+            var para = document.getElementsByTagName("caption"); 
+            if(g1.checked == false && g2.checked == false)
+            {
+                para[0].style.color = "red";
+                return false;   
+            }
+
+            if(username.value.trim() == "" && password.value.trim() == "" && email.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                para[0].style.color = "black";
+                return false;
+            }
+            
+
+            if(email.value.trim() == "" && username.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                para[0].style.color = "black";
+                return false;
+            }
+            else if(email.value.trim() == "" && password.value.trim() == "")
+            {
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                para[0].style.color = "black";
+                return false;
+            }
+            else if(password.value.trim() == "" && username.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                para[0].style.color = "black";
+                return false;
+            }
+            else if(email.value.trim() == "")
+            {
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                para[0].style.color = "black";
+                return false;
+            }
+            else if (username.value.trim() == "")
+            {
+                //alert("blank username");
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                para[0].style.color = "black";
+                return false; 
+            }
+            else if(password.value.trim() == "")
+            {
+                //alert("blank password");
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                para[0].style.color = "black";
+                return false; 
+            }
+            
+            
+            else if(password.value.trim().length <= 4)
+            {
+                alert("password is too short");
+                return false; 
+            }
+
+            if(t1.checked == false)
+            {
+                alert("Please Read & Chech T&Cs")
+                return false;   
+            }
+
+            else 
+            {
+                document.getElementById("eun").style.visibility = "hidden";
+                document.getElementById("epw").style.visibility = "hidden";
+                document.getElementById("eeml").style.visibility = "hidden";
+                return true;
+            }
+
+        }
+
+
+		</script>
+    </head>
+
+	<body>
+        <header>
+            <div class="head">
+                <h2>KODI<span>ERERIN</span></h2>
+            </div>
+        </header>
+        <form onsubmit="return fn1()" action="my_code_0_message.html">
+            
+            <div class="page" align="center">
+                
+                <h3>Sign Up Here For Your Account</h3>
+                <input id = "fn" placeholder="First name">
+                <input id = "ln" placeholder="last name">
+                <br><br>
+                <table border="0">
+                <caption>Select gender</caption> 
+                    <tr>
+                        <td>
+                            <input id="rd1" name="gre1" type="radio" value="male">Male</input>
+                        </td>    
+                        <td>
+                            <input id="rd2" name="gre1" type="radio" value="female">Female</input>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <input id="bd" placeholder="Birth date">
+                <br><br>
+                <table border="0">
+                    <tr>
+                        <td><input id="eml" placeholder="E-mail ID"></td>
+                         <td><input id = "un" placeholder="username"></td>
+                    </tr>
+                    <tr align="center">
+                        <td><label id="eeml" style="color: red; visibility: hidden;">Invalid Em ID</label></td>
+                        <td><label id="eun" style="color: red; visibility: hidden;">Invalid Username</label></td>
+                    </tr>
+                </table>
+                <input type="password" id = "pw" placeholder="create password">
+                <br>
+                <label id="epw" style="color: red; visibility: hidden;">Invalid Password</label>
+                <br><br>
+                <input type="checkbox" id="tac">
+                    <label id="teco">I Agree To All Terms & Condition</label> 
+                </input>
+                <br><br>
+                <button class="subo" type = "submit">SIGN UP</button>
+                <br><br>
+                <hr>
+                <p>OR</p>
+                <lable>Already Have Account?</lable>
+                <a href="#" class="lgbtn">Log in</a>
+
+            </div>
+            
+        </form>
+ 
+        <div class="img">
+
+        </div>
+
+	</body>
+</html>

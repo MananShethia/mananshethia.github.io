@@ -1,0 +1,146 @@
+<html>
+	<head>
+        <title>Sign in Page</title>
+        <link rel="stylesheet" href="log_in.css">
+		<script type="text/javascript">
+		
+        function fn1()
+        {          
+            var password = document.getElementById("pw");
+            var username = document.getElementById("un");
+            var email = document.getElementById("eml");
+
+
+            if(username.value.trim() == "" && password.value.trim() == "" && email.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                return false;
+            }
+            
+            if(email.value.trim() == "" && username.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                return false;
+            }
+
+            else if(email.value.trim() == "" && password.value.trim() == "")
+            {
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                return false;
+            }
+
+            else if(password.value.trim() == "" && username.value.trim() == "")
+            {
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                return false;
+            }
+
+            else if(email.value.trim() == "")
+            {
+                email.style.border = "solid 1px red";
+                document.getElementById("eeml").style.visibility = "visible";
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                return false;
+            }
+
+            else if (username.value.trim() == "")
+            {
+                //alert("blank username");
+                username.style.border = "solid 1px red";
+                document.getElementById("eun").style.visibility = "visible";
+                password.style.border = "solid 1px black";
+                document.getElementById("epw").style.visibility = "hidden";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                return false; 
+            }
+
+            else if(password.value.trim() == "")
+            {
+                //alert("blank password");
+                password.style.border = "solid 1px red";
+                document.getElementById("epw").style.visibility = "visible";
+                username.style.border = "solid 1px black";
+                document.getElementById("eun").style.visibility = "hidden";
+                email.style.border = "solid 1px black";
+                document.getElementById("eeml").style.visibility = "hidden";
+                return false; 
+            }
+            
+            else 
+            {
+                document.getElementById("eun").style.visibility = "hidden";
+                document.getElementById("epw").style.visibility = "hidden";
+                document.getElementById("eeml").style.visibility = "hidden";
+                return true;
+            }
+
+        }
+
+
+		</script>
+    </head>
+
+	<body>
+        <header>
+            <div class="head">
+                <h2>KODI<span>ERERIN</span></h2>
+            </div>
+        </header>
+        <form onsubmit="return fn1()" action="my_code_0_message.html">
+            
+            <div class="page" align="center">
+                
+                <h3>Log In Here For Your Account</h3>
+                <input id = "un" placeholder="username">
+                <br>
+                <label id="eun" style="color: red; visibility: hidden;">Invalid Username</label>
+                <br>
+                <input id="eml" placeholder="E-mail ID">
+                <br>
+                <label id="eeml" style="color: red; visibility: hidden;">Invalid Em ID</label>
+                <br>
+                <input type="password" id = "pw" placeholder="create password">
+                <br>
+                <label id="epw" style="color: red; visibility: hidden;">Invalid Password</label>
+                <br><br>
+                <button class="libo" type = "submit">LOG IN</button>
+                <br><br>
+                <hr>
+                <p>OR</p>
+                <lable>Create Account?</lable>
+                <a href="http://mananshethia.github.io/sign_up" class="subtn">Sign up</a>
+
+            </div>
+            
+        </form>
+ 
+        <div class="img">
+
+        </div>
+
+	</body>
+</html>

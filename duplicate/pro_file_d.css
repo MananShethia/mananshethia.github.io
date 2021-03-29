@@ -1,0 +1,371 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header
+{
+    z-index: 4;
+    position: fixed;
+    background: #22242a;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.left_s h2
+{
+    color: rgba(255, 255, 255, 0.973);
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.left_s span
+{
+    color: rgb(0, 162, 255);
+}
+
+.right_s 
+{
+    margin-top: -50px;
+    margin-left: 350px;
+}
+
+.right_s a
+{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.2s;
+    transition-property: color;
+}
+
+.right_s a:hover
+{
+    color: rgb(0, 162, 255);
+}
+
+.lgot_btn
+{
+    padding: 5px;
+    background: #2499bd;
+    text-decoration: none;
+    float: right;
+    margin-top: -45px;
+    margin-right: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.lgot_btn:hover
+{
+    background: #2db1da;
+}
+
+.sidebar
+{
+    background: #2F323A;
+    margin-top: 80px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar .prof_img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4
+{
+    color: #ccc;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar a
+{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height:50px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.sidebar a:hover
+{
+    background: rgb(25, 168, 197);
+}
+
+.sidebar a:active
+{
+    background: rgb(16, 147, 173);
+}
+
+#i1
+{
+    background: rgb(25, 168, 197);
+}
+
+.sidem
+{
+    margin-left: 80px;
+    font-size: large;
+}
+
+.sidem a
+{
+    padding: 0px;
+    line-height: 0px;
+    display: inline;
+    transition-property: background;
+}
+
+.sidem a:hover
+{
+    background: #2F323A;
+}
+
+.sidem i
+{
+    color: black;
+    padding-top: 70px;
+    padding-right: 10px;
+}
+
+.sidebar i
+{
+    padding-right: 10px;
+    font-size: larger;                     
+}
+
+label #slide_btn
+{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 24px;
+    margin: 9px 0;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+label #slide_btn:hover
+{
+    color: rgb(0, 162, 255);
+}
+
+#check:checked ~ .sidebar
+{
+    left: -250px;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+#check:not(checked) ~ .sidebar
+{
+    transition: 0.5s;
+}
+
+#check
+{
+    display: none;
+}
+
+/*
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content 
+{
+    padding-top: 102px;
+}
+*/
+
+.tabl 
+{
+    background: rgb(209, 234, 248);
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 200px;
+    height: 170px;   
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.tab h2
+{
+    margin-top: 0px;
+    padding-left: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.tab h4
+{
+    margin-top: -40px;
+    padding-left: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(134, 133, 133);
+}
+
+.tab h5
+{
+    margin-top: -30px;
+    padding-left: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(134, 133, 133);
+}
+
+#check:checked ~ .tabl
+{
+    margin-left: 180px;
+}
+
+.content
+{
+    position: absolute;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.content .p_img
+{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 370px;
+    border-radius: 100%;
+    border: 4px solid rgb(170, 167, 167);
+}
+
+#check:checked ~ .content
+{
+    margin-left: -120px;
+}
+
+.pro_con 
+{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 300px;
+}
+
+.pro_con h3
+{
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border: 1px solid;
+}
+
+.head_con
+{
+    transition: 0.5s;
+}
+
+#check:checked ~ .head_con
+{
+    margin-left: -130px;    
+}
+
+
+/*
+#r1
+{
+    margin-left: 400px;
+}
+#r2
+{
+    margin-left: 345px;
+}
+#r3
+{
+    margin-left: 370px;
+}
+#r4
+{
+    margin-left: 360px;
+}
+
+/*
+.sr1
+{
+    border-radius: 5px;
+    color: white;
+    background: #2F323A;   
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+*/
+
+.checkc
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 602px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+.checkc:hover
+{
+    transition: 0.3s;
+    background: rgb(94, 93, 93);
+}
+
+.checkc:active
+{
+    transition: 0.3s;
+    background: #777;
+}
+
+.sr1
+{
+    width: 565px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.sr1 p
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}

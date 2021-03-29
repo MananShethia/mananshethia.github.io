@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="pro_file.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+        <script type="text/javascript">
+    /*    function fc1()
+        {        
+        var chk = document.getElementsByClassName("checkc");
+        var i;
+        for(i=0; i<chk.length; i++)
+        {
+            chk[i].addEventListener("click", fn1());
+
+            Function fn1()
+            { 
+                this.classList.toggle("active"); 
+                var sr1 = this.nextElementSibling;
+                if(sr1.style.display = "block")
+                {
+                    sr1.style.display = "none";
+                }
+                else
+                {
+                    sr1.style.display = "block";
+                }
+            }
+        
+        }
+        }
+      */  
+        function fc1()
+        {
+            var chk = document.getElementsByClassName("checkc");
+            var i;
+            for (i = 0; i < chk.length; i++) {
+                chk[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var sr1 = this.nextElementSibling;
+                    if (sr1.style.display === "block") {
+                        sr1.style.display = "none";
+                    } else {
+                        sr1.style.display = "block";
+                    }
+                });
+            }
+           
+        }
+
+        </script>
+
+
+    </head>
+    
+    <body>
+
+
+        <input type="checkbox" id="check">
+        <header id="myheader">
+            
+            <label for="check">
+                <i class="fas fa-bars" id="slide_btn"></i>
+            </label>
+            <div class="left_s">
+                <h2>KODI<span>ERERIN</span></h2>
+            </div>
+            <div class="right_s">
+                <a href="http://mananshethia.github.io/home">Home</a>
+                <a href="http://mananshethia.github.io/album">Album</a>
+                <a href="http://mananshethia.github.io/account">Account</a>
+            </div>
+
+        </header>
+
+        <div class="sidebar">
+            <center>
+                <img src="web_logo/m_logo.jpg" class="prof_img" alt="">
+                <h4>Manan Shethia</h4>
+            </center>
+            <a href="http://mananshethia.github.io/pro_file" id="i1"><i class="far fa-id-badge"></i><span>Profile</span></a>   
+            <a href="http://mananshethia.github.io/about_me"><i class="fas fa-address-card"></i><span>About</span></a>
+            <a href="http://mananshethia.github.io/help"><i class="fas fa-question-circle"></i><span>Help</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>Setting</span></a>
+            <label class="sidem">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/manan-shethia-77553b172/"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:mrs000701@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            </label>
+
+        </div>
+
+
+        <div class="head_con">
+            <div class="tabl">
+                <div class="tab">
+                    <h2>MANAN SHETHIA</h2>
+                    <h4>GUJARAT</h4>
+                    <h5>INDIA</h5>
+                </div>               
+            </div>
+            <div class="content">
+                <img src="web_logo/m_logo.jpg" class="p_img" alt="">
+            </div>
+            
+            <div class="pro_con">    
+                
+  
+                    <!-- <button onclick="fc1()" type="button" class="checkc">Courses</button> -->
+                    <details>
+                        <summary class="checkc">Courses</summary>
+                        <!-- <div id="s1" class="sr1"> -->
+                            <p class="sr">Programming for Everybody<span> (Getting Started with Python)</span><a href="https://www.coursera.org/account/accomplishments/records/DLD4YQ5NAWP6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="sra" id="sra1"><i class="fas fa-address-card"></i></a></p>
+                            <h5 class="srh">University of Michigan</h5>
+                            <p class="sr">Python Data Structures<a href="https://www.coursera.org/account/accomplishments/records/TKWYT8VY723B?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="sra" id="sra2"><i class="fas fa-address-card"></i></a></p>
+                            <h5 class="srh">University of Michigan</h5>
+                        <!-- </div> -->
+                    </details>
+                    
+                    <!-- <button onclick="fc1()" type="button" class="checkc">Schooling</button> -->
+                    <details>
+                        <summary class="checkc">Schooling</summary>
+                        <!-- <div id="s3" class="sr1"> -->
+                            <p class="sr">Pre-Primary : Shree Narayan Guru Vidhyalaya - (2005-06)</p>
+                            <p class="sr">Primary-Secondary : kendriya vidyalaya (SAC) - (2006-2017)</p>
+                            <p class="sr">Senior Secondary Under Science - (2017-2019)</p>
+                        <!-- </div> -->
+                    </details>
+
+                    <!-- <button onclick="fc1()" type="button" class="checkc">Graduation</button> -->
+                    <details>
+                        <summary class="checkc">Graduation</summary>
+                        <!-- <div id="s4" class="sr1"> -->
+                            <p class="sr">Bachelor of Engineering</p>
+                            <p class="sr">College : LJ Institute Of Engineering & Technology - (Undergraduate)</p>
+                            <p class="sr">Field : Computer Engineering</p>
+                            <p class="sr">Year : First</p>
+                        <!-- </div> -->
+                    </details>
+            
+            </div>
+        
+            <div class="backc"></div>
+        
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+        <meta charset="utf-8">
+        <title>Help Page</title>
+        <link rel="stylesheet" href="help.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+        <script type="text/javascript">
+        function fc1()
+        {
+            var chk = document.getElementsByClassName("checkc");
+            var i;
+            for (i = 0; i < chk.length; i++) {
+                chk[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var sr1 = this.nextElementSibling;
+                    if (sr1.style.display === "block") {
+                        sr1.style.display = "none";
+                    } else {
+                        sr1.style.display = "block";
+                    }
+                });
+            }
+        }
+
+        function que()
+        {
+            var text = document.getElementById("tq");
+            if(text.value.trim() != "")
+            {
+                alert("Your Response Has Been Recorded");
+            }          
+            else
+            {
+                alert("Nothing Is Entered");
+            }  
+        }
+        
+        </script>
+    </head>
+    
+    <body>
+
+        <input type="checkbox" id="check">
+        <header>
+            
+            <label for="check">
+                <i class="fas fa-bars" id="slide_btn"></i>
+            </label>
+            <div class="left_s">
+                <h2>KODI<span>ERERIN</span></h2>
+            </div>
+            <div class="right_s">
+                <a href="http://mananshethia.github.io/home">Home</a>
+                <a href="http://mananshethia.github.io/album">Album</a>
+                <a href="http://mananshethia.github.io/account">Account</a>
+            </div>
+
+        </header>
+
+        <div class="sidebar">
+            <center>
+                <img src="web_logo/m_logo.jpg" class="prof_img" alt="">
+                <h4>Manan Shethia</h4>
+            </center>
+            <a href="http://mananshethia.github.io/pro_file"><i class="far fa-id-badge"></i><span>Profile</span></a>   
+            <a href="http://mananshethia.github.io/about_me"><i class="fas fa-address-card"></i><span>About</span></a>
+            <a href="http://mananshethia.github.io/help" id="i3"><i class="fas fa-question-circle"></i><span>Help</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>Setting</span></a>
+            <label class="sidem">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/manan-shethia-77553b172/"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:mrs000701@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            </label>
+
+        </div>
+        <div class="content">
+            <h2>FAQ</h2>
+
+            <!-- <button onclick="fc1()" class="checkc">What is the purpose of this website?</button> -->
+            <details>
+                <summary class="checkc">What is the purpose of this website?</summary>
+            <!-- <div class="sr1"> -->
+                <p class="sr">The only purpose is to understand how a website works or what</p>
+                <p class="sr">make thinks to do different functionality on a webpage</p>
+            <!-- </div> -->
+            </details>
+            
+            <!-- <button onclick="fc1()" class="checkc">Which languages you used to make this website?</button> -->
+            <details>
+                <summary class="checkc">Which languages you used to make this website?</summary>
+            <!-- <div class="sr1"> -->
+                <p class="sr">I used HTML(HyperText Markup Language), Javascript</p> 
+                <p class="sr">& CSS(Cascading Style Sheets></p>
+            <!-- </div> -->
+            </details>
+            
+            <!-- <button onclick="fc1()" class="checkc">What are sources from which you got the help?</button> -->
+            <details>
+                <summary class="checkc">What are sources from which you got the help?</summary>
+            <!-- <div class="sr1"> -->
+                <p class="sr"><a href="https://www.youtube.com/user/javaboynavin">Telusko</a></p>
+                <p class="sr"><a href="https://www.w3schools.com/">W3school</a></p>
+            <!-- </div> -->
+            </details>
+
+            <!-- <button onclick="fc1()" class="checkc">You made any html code before this?</button> -->
+            <details>
+                <summary class="checkc">You made any html code before this?</summary>
+            <!-- <div class="sr1"> -->
+                <p class="sr">Yrs, first I learn all the basics functions like different Tags,</p>
+                <p class="sr">Properties, What & How to connect JS & CSS and some more</p>
+                <p class="sr">stuffs like this</p>
+            <!-- </div> -->
+            </details>
+
+            <br>
+            <div class="aoq">
+                <input id="tq" class="tque" placeholder="Any Other Question">
+                <button onclick="que()" class="sque">SUBMIT</button>
+            </div>
+
+        </div>    
+        <div class="bimg">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+    <style>
+        html, body 
+        {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .full-height 
+        {
+          width: 98%;
+          height: 99%;  
+        }
+        .tab-hw
+        {
+            width: 98%;
+            height: 87%;
+        }
+        </style>
