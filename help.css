@@ -313,7 +313,7 @@ label #slide_btn:hover
     margin-left: 0px;
     background: rgb(231, 230, 230);
     background-position: center;
-    background-size: cover; 
-    height: 130vh;
-    width: 1519px;
+    background-size: 100% auto; 
+    height: 100% auto;
+    width: 100vw auto;
 }

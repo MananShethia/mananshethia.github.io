@@ -428,6 +428,7 @@ label #slide_btn:hover
     background: rgb(231, 230, 230);
     margin-left: 0px;
     background-position: center;
-    background-size: cover;
-    height: 160vh;
+    background-size: 100% auto; 
+    height: 100% auto;
+    width: 100vw auto;
 }
