@@ -7,22 +7,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     
         <script type="text/javascript">
-        function fc1()
-        {
-            var chk = document.getElementsByClassName("checkc");
-            var i;
-            for (i = 0; i < chk.length; i++) {
-                chk[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var sr1 = this.nextElementSibling;
-                    if (sr1.style.display === "block") {
-                        sr1.style.display = "none";
-                    } else {
-                        sr1.style.display = "block";
-                    }
-                });
-            }
-        }
+        // function fc1()
+        // {
+        //     var chk = document.getElementsByClassName("checkc");
+        //     var i;
+        //     for (i = 0; i < chk.length; i++) {
+        //         chk[i].addEventListener("click", function() {
+        //             this.classList.toggle("active");
+        //             var sr1 = this.nextElementSibling;
+        //             if (sr1.style.display === "block") {
+        //                 sr1.style.display = "none";
+        //             } else {
+        //                 sr1.style.display = "block";
+        //             }
+        //         });
+        //     }
+        // }
 
         function que()
         {
@@ -116,11 +116,12 @@
             </details>
 
             <br>
-            <div class="aoq">
-                <input id="tq" class="tque" placeholder="Any Other Question">
-                <button onclick="que()" class="sque">SUBMIT</button>
-            </div>
-
+            <form connect="help.php" method="post">
+                <div class="aoq">
+                    <input id="tq" class="tque" placeholder="Any Other Question" name="questions">
+                    <button onclick="que()" class="sque">SUBMIT</button>
+                </div>
+            </form>
         </div>    
         <div class="bimg">
 
